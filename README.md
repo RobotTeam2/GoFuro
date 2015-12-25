@@ -1,6 +1,12 @@
 # GoFuro  
 hot furo from outside.  
 
+Raspのスクリプト更新  
+<pre>
+cd /home/pi/GoFuro
+git pull
+</pre>
+
 
 自動起動⇒設定済み
 crontab -e  
