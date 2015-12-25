@@ -1,9 +1,9 @@
 #!/bin/bash
 date
-rm -rf /dev/shm/GoFuro/Dropbox-Uploader/DOButtonGoFuro
-cd /dev/shm/GoFuro/Dropbox-Uploader/ && ./dropbox_uploader.sh download DOButtonGoFuro
+rm -rf /dev/shm/Dropbox-Uploader/DOButtonGoFuro
+cd /dev/shm/Dropbox-Uploader/ && ./dropbox_uploader.sh download DOButtonGoFuro
 
-if [ -f /dev/shm/GoFuro/Dropbox-Uploader/DOButtonGoFuro/gofuro.txt ] 
+if [ -f /dev/shm/Dropbox-Uploader/DOButtonGoFuro/gofuro.txt ] 
 then
   /home/pi/GoFuro/sendBTCommand.sh
 else
@@ -13,7 +13,7 @@ fi
 
 
 
-cd /dev/shm/GoFuro/Dropbox-Uploader/ && ./dropbox_uploader.sh delete DOButtonGoFuro
+cd /dev/shm/Dropbox-Uploader/ && ./dropbox_uploader.sh delete DOButtonGoFuro
 sync
 
 
