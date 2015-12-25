@@ -1,0 +1,3 @@
+#              /dev/rfcomm10  bt mac address
+# hcitool scan 
+rfcomm connect 10 00:1B:DC:0A:34:BE
