@@ -25,7 +25,9 @@
 # Executables
 *.exe
 
-Dropbox-Uploader
 
 *.out
 *.app
+
+Dropbox-Uploader
+*.log
