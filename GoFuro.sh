@@ -5,7 +5,7 @@ cd /home/pi/GoFuro/Dropbox-Uploader/ && ./dropbox_uploader.sh download DOButtonG
 
 if [ -f /home/pi/GoFuro/Dropbox-Uploader/DOButtonGoFuro/gofuro.txt ] 
 then
-  ./home/pi/GoFuro/sendBTCommand.sh
+  /home/pi/GoFuro/sendBTCommand.sh
 else
   echo "!!!no trigger of gofuro!!!"
 fi
