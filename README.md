@@ -25,3 +25,8 @@ MACアドレスをコピーし、下記のファイルにのMacアドレスを�
   /home/pi/GoFuro/bind.bt
   rfcomm connect 10 00:1B:DC:0A:34:BE
 </pre>
+
+自宅のDNS確認  
+<pre>
+cat /etc/resolv.conf
+</pre>
