@@ -8,4 +8,4 @@ hciconfig up hci0
 rfcomm connect  10 00:BA:55:57:4F:1A &
 
 sleep 10
-stty -F /dev/rfcomm10 115200
+stty -F /dev/rfcomm10 9600
