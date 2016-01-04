@@ -5,7 +5,7 @@ hciconfig up hci0
 
 #              /dev/rfcomm10  bt mac address
 # hcitool scan 
-rfcomm connect 10 00:1B:DC:0A:34:BE &
+rfcomm connect  10 00:BA:55:57:4F:1A &
 
 sleep 10
 stty -F /dev/rfcomm10 115200
