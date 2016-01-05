@@ -29,7 +29,8 @@ cd /dev/shm/Dropbox-Uploader/ && ./dropbox_uploader.sh upload /dev/shm/GoFuro.lo
 
 actualsize=`wc -c < /dev/shm/GoFuro.log`
 echo "actualsize = $actualsize"
-minimumsize=1000000
+# max log 10K
+minimumsize=10000
 echo "minimumsize = $minimumsize"
 if [ $actualsize -ge $minimumsize ]
 then
