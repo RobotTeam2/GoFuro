@@ -1,6 +1,11 @@
 # GoFuro  
 hot furo from outside.  
 
+これらのスクリプトは、Dropbox-Uploaderに依存しています。
+https://github.com/andreafabrizi/Dropbox-Uploader
+
+
+
 Raspのスクリプト更新  
 <pre>
 cd /home/pi/GoFuro
