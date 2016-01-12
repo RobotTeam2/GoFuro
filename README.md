@@ -1,7 +1,7 @@
 # GoFuro  
 hot furo from outside.  
 
-これらのスクリプトは、Dropbox-Uploaderに依存しています。
+これらのスクリプトは、Dropbox-Uploaderに依存しています。  
 https://github.com/andreafabrizi/Dropbox-Uploader
 
 
