@@ -1,11 +1,12 @@
 #!/bin/bash
 date
 rm -rf /dev/shm/Dropbox-Uploader/DOButtonGoFuro
+WC=`pwd`
 if [ -d /dev/shm/Dropbox-Uploader ]
 then
   echo "have been copied to ramdisk"
 else
-  cp -rf /home/pi/GoFuro/Dropbox-Uploader /dev/shm/
+  cp -rf ${WC}/Dropbox-Uploader /dev/shm/
 fi
 
 
@@ -14,7 +15,7 @@ cd /dev/shm/Dropbox-Uploader/ && ./dropbox_uploader.sh download DOButtonGoFuro
 
 if [ -f /dev/shm/Dropbox-Uploader/DOButtonGoFuro/gofuro.txt ] 
 then
-  /home/pi/GoFuro/sendBTCommand.sh
+  ${WC}/sendBTCommand.sh
 else
   echo "!!!no trigger of gofuro!!!"
 fi
