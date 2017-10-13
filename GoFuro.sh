@@ -42,7 +42,7 @@ then
   actualsize=`wc -c < /dev/shm/GoFuro.log`
 fi
 echo "actualsize = $actualsize"
-# max log 10K
+# max log 100K
 minimumsize=100000
 echo "minimumsize = $minimumsize"
 if [ $actualsize -ge $minimumsize ]
