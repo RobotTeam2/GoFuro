@@ -29,7 +29,7 @@ fi
 
 
 echo "try to delete old files on drop box..."
-#cd /dev/shm/Dropbox-Uploader/ && ./dropbox_uploader.sh delete DOButtonGoFuro
+cd /dev/shm/Dropbox-Uploader/ && ./dropbox_uploader.sh delete DOButtonGoFuro
 
 echo "try to upload run log"
 cd /dev/shm/Dropbox-Uploader/ && ./dropbox_uploader.sh upload /dev/shm/GoFuro.log goFuroLog/GoFuro.log.txt
