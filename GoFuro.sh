@@ -22,7 +22,7 @@ fi
 
 
 echo "try to delete old files on drop box..."
-cd /dev/shm/Dropbox-Uploader/ && ./dropbox_uploader.sh delete DOButtonGoFuro
+#cd /dev/shm/Dropbox-Uploader/ && ./dropbox_uploader.sh delete DOButtonGoFuro
 
 echo "try to upload run log"
 cd /dev/shm/Dropbox-Uploader/ && ./dropbox_uploader.sh upload /dev/shm/GoFuro.log goFuroLog/GoFuro.log.txt
@@ -31,12 +31,10 @@ cd /dev/shm/Dropbox-Uploader/ && ./dropbox_uploader.sh upload /dev/shm/GoFuro.lo
 actualsize=`wc -c < /dev/shm/GoFuro.log`
 echo "actualsize = $actualsize"
 # max log 10K
-minimumsize=10000
+minimumsize=100000
 echo "minimumsize = $minimumsize"
 if [ $actualsize -ge $minimumsize ]
 then
   rm -f /dev/shm/GoFuro.log
 fi
 sync
-
-
