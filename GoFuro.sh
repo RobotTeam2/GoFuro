@@ -17,15 +17,14 @@ if [ -f /dev/shm/Dropbox-Uploader/DOButtonGoFuro/GoFuro.txt ]
 then
   ${WC}/sendBTCommand.sh
 else
-  echo "!!!no trigger of gofuro!!!"
+  if [ -f /dev/shm/Dropbox-Uploader/DOButtonGoFuro/gofuro.txt ] 
+  then
+    ${WC}/sendBTCommand.sh
+  else
+    echo "!!!no trigger of gofuro!!!"
+  fi
 fi
 
-if [ -f /dev/shm/Dropbox-Uploader/DOButtonGoFuro/gofuro.txt ] 
-then
-  ${WC}/sendBTCommand.sh
-else
-  echo "!!!no trigger of gofuro!!!"
-fi
 
 
 
