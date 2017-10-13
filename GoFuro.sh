@@ -29,7 +29,11 @@ echo "try to upload run log"
 cd /dev/shm/Dropbox-Uploader/ && ./dropbox_uploader.sh upload /dev/shm/GoFuro.log goFuroLog/GoFuro.log.txt
 
 
-actualsize=`wc -c < /dev/shm/GoFuro.log`
+actualsize=0
+if [ -f /dev/shm/GoFuro.log ] 
+then
+  actualsize=`wc -c < /dev/shm/GoFuro.log`
+fi
 echo "actualsize = $actualsize"
 # max log 10K
 minimumsize=100000
