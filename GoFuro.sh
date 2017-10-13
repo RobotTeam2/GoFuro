@@ -2,6 +2,7 @@
 date
 rm -rf /dev/shm/Dropbox-Uploader/DOButtonGoFuro
 WC=`pwd`
+WC=/home/pi/GoFuro
 if [ -d /dev/shm/Dropbox-Uploader ]
 then
   echo "have been copied to ramdisk"
