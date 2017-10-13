@@ -13,6 +13,13 @@ fi
 echo "try download trigger text file from drop box..."
 cd /dev/shm/Dropbox-Uploader/ && ./dropbox_uploader.sh download DOButtonGoFuro
 
+if [ -f /dev/shm/Dropbox-Uploader/DOButtonGoFuro/GoFuro.txt ] 
+then
+  ${WC}/sendBTCommand.sh
+else
+  echo "!!!no trigger of gofuro!!!"
+fi
+
 if [ -f /dev/shm/Dropbox-Uploader/DOButtonGoFuro/gofuro.txt ] 
 then
   ${WC}/sendBTCommand.sh
